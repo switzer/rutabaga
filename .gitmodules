@@ -1,3 +1,6 @@
 [submodule "lib/node-mongodb-native"]
 	path = lib/node-mongodb-native
 	url = git://github.com/christkv/node-mongodb-native.git
+[submodule "lib/node_debug"]
+	path = lib/node_debug
+	url = git://github.com/Connorhd/node_debug.git
