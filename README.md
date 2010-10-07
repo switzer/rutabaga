@@ -1,0 +1,3 @@
+# Overview
+
+Rutabaga is an open source framework for responding to ad exchanges, like OpenX and AdX. The purpose of Rutabaga is to build infrastructure to communicate directly with ad exchanges, so that advertisers, ad networks, DSP’s, and other bidders can easily build functionality on top, rather than building a scalable, low level stack. Rutabags is written in Javascript using Node.js, with a MongoDB back end.

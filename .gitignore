@@ -1,0 +1,7 @@
+build
+.waf*
+tags
+.lock-wscript
+*.pyc
+*.patch
+*.swp
