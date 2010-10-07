@@ -1,0 +1,43 @@
+
+¢
+openx.protoopenx"F
+AdId
+campaign_id (
+placement_id (
+creative_id ("©
+
+BidRequest
+api_version (
+
+auction_id (	$
+matching_ad_ids (2.openx.AdId
+pub_website_id (	
+	ad_height (
+ad_width (
+user_cookie_id (	
+user_ip_address (
+user_screen_height	 (
+user_screen_width
+ (
+user_geo_country (	
+user_geo_state (	
+user_geo_dma (
+
+user_agent (	
+	user_lang (	
+url (	
+http_referer (	
+ox_cat_tier_1 (
+ox_cat_tier_2 (
+pub_blocked_cat (
+pub_blocked_content (
+pub_blocked_type (
+pub_blocked_url (	"—
+BidResponse
+api_version (
+
+auction_id (	#
+matching_ad_id (2.openx.AdId
+cpm_bid_micros (
+ad_code (	
+	click_url (	
