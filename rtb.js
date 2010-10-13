@@ -6,7 +6,7 @@ var sys = require("sys"),
     Schema = require('protobuf_for_node').Schema;
 
 // Loading descriptor
-var schema = new Schema(fs.readFileSync('openx.desc'));;
+var schema = new Schema(fs.readFileSync('openx.desc'));
 
 const HOST = "0.0.0.0";
 const PORT = 80;
@@ -27,7 +27,7 @@ var server = http.createServer(function(request, response){
           api_version: _request['api_version'],
           auction_id: _request['auction_id'],
           matching_ad_id: _request['matching_ad_ids'][0],
-          cpm_bid_micros: 12345,
+          cpm_bid_micros: 12345
         };
         var bidResponse = schema['openx.BidResponse'];
 	response.end(bidResponse.serialize(_response));
