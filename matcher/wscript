@@ -1,0 +1,26 @@
+import os
+import Options
+import Logs
+import Utils
+
+srcdir = '.'
+blddir = 'build'
+VERSION = '0.1'
+
+def set_options(opt):
+  opt.tool_options('compiler_cxx')
+
+def configure(conf):
+  conf.check_tool('compiler_cxx')
+  conf.check_tool('node_addon')
+
+  conf.env.append_value('CCFLAGS', ['-O3'])
+  conf.env.append_value('CXXFLAGS', ['-O3'])
+
+def build(bld):
+  # protobuf_for_node comes as a library to link against for services
+  # and an addon to use for plain serialization.
+  obj = bld.new_task_gen('cxx', 'shlib', 'node_addon')
+  obj.target = 'matcher'
+  obj.source = 'matcher.cc'
+  obj.uselib = ['NODE']
