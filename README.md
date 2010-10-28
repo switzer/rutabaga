@@ -13,15 +13,16 @@ Rutabaga is an open source framework for responding to ad exchanges, like OpenX 
 @node-protobuf@ (http://github.com/exslim/node-protobuf)
 @Mu@ (http://github.com/raycmorgan/Mu)
 @hashlib@ (http://github.com/brainfucker/hashlib)
-Optional. @fugue (http://github.com/pgte/fugue)
 
 2. Build @Matcher@ addon
 Enter @matcher@ directory and run @node-waf configure && node-waf build@
 
-
 # Configuration
-See @settings.js@ file for examples.
+See @conf/settings.js@ and @conf/webserver.js@ files for examples.
 
+# Run
+Don't forget to run mongodb before rutabaga app.
+See @tests@ directory.
 
 # Deployment
 Use nginx as frontend for node's instances.
@@ -29,10 +30,10 @@ See example of Nginx config located at @conf/nginx.conf@
 
 
 # Spawning node processes
-Just enter appropriate settings (@NUMBER_OF_HTTP_WORKERS@) in @conf/settings.js@
+See @docs/api.md@ for examples.
 Optional. Take a look at @Fugue@ (http://github.com/pgte/fugue)
 
 
 # Hints
 1. Spawn one node process per CPU core.
-2. Use Unix socket instead TCP connection for node process.
+2. Use Unix socket instead TCP connection for node process if possible.
