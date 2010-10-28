@@ -13,7 +13,7 @@ Rutabaga is an open source framework for responding to ad exchanges, like OpenX 
 @node-protobuf@ (http://github.com/exslim/node-protobuf)
 @Mu@ (http://github.com/raycmorgan/Mu)
 @hashlib@ (http://github.com/brainfucker/hashlib)
-@fugue (http://github.com/pgte/fugue)
+Optional. @fugue (http://github.com/pgte/fugue)
 
 2. Build @Matcher@ addon
 Enter @matcher@ directory and run @node-waf configure && node-waf build@
@@ -29,7 +29,7 @@ See example of Nginx config located at @conf/nginx.conf@
 
 
 # Spawning node processes
-Just enter appropriate settings (@NUMBER_OF_HTTP_WORKERS@) in @conf/settings.js@ and @fugue@ will spawn it for you.
+Just enter appropriate settings (@NUMBER_OF_HTTP_WORKERS@) in @conf/settings.js@
 Optional. Take a look at @Fugue@ (http://github.com/pgte/fugue)
 
 

@@ -1,8 +1,14 @@
-/*
-        Stub for log handler, currently implemented in rtb.js
-        // TODO (exslim) Move log handler from rtb.js to log.js
-*/
+var core = require("./lib/core"),
+    path = require("path"),
+    server = require("./lib/log").LogServer,    
+    WebserverConfig = require("./conf/webserver").DevelopmentConfig;
 
-var log_server;
+console.log('Nodejs version: ' + process.version);
+console.log('Platform: ' + process.platform);
+console.log('PID: ' + process.pid);
 
-exports.log_server = log_server;
+var webserver_config = new WebserverConfig();
+webserver_config.WEBSERVER_PORT = parseInt(process.argv[2]) || webserver_config.WEBSERVER_PORT;
+
+console.log("Running " + path.basename(__filename) + " on " + webserver_config.WEBSERVER_PORT + " port ...");
+core.run_app(server, webserver_config);
