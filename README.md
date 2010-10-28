@@ -20,20 +20,19 @@ Rutabaga is an open source framework for responding to ad exchanges, like OpenX 
 `hashlib` (http://github.com/brainfucker/hashlib)
 
 
- - Build `Matcher` addon
-Enter `matcher` directory and run `node-waf configure && node-waf build`
+ - Build `Matcher` addon. Enter `matcher` directory and run `node-waf configure && node-waf build`
 
 
 # Configuration
-See conf/settings.js and conf/webserver.js files for examples.
+See `conf/settings.js and` `conf/webserver.js` files for examples.
 
 # Run
 Don't forget to run mongodb before rutabaga app.
-See tests directory.
+See `tests` directory.
 
 # Deployment
 Use nginx as frontend for node's instances.
-See example of Nginx config located at conf/nginx.conf
+See example of Nginx config located at `conf/nginx.conf`
 
 
 # Spawning node processes
