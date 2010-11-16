@@ -8,12 +8,12 @@ nodejs, mongodb
 
 # Installation
 1. Install dependencies with npm:
-```text
+```
 npm install mongodb mongoose https://github.com/exslim/node-protobuf/tarball/master https://github.com/exslim/Mu/tarball/master https://github.com/exslim/hashlib/tarball/master
 ```
 
 2. Pull the *dev* branch of repo and run:
-```text
+```
 make
 ```
 
