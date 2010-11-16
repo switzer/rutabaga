@@ -4,7 +4,7 @@ var core = require("./lib/core");
 ```
 
 *core.run_app(server, config)*
-Run webserver instance according to config.
+Run webserver(http.Server) instance according to config.
 
 _server_ - instance of RtbServer(lib/rtb.js), LogServer(lib/log.js) or ClickServer(lib/click.js) class.
 _config_ - instance of DevelopmentConfig(conf/webserver.js), ProductionConfig(conf/webserver.js) or other config class

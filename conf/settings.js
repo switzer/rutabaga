@@ -24,4 +24,7 @@ exports.BaseConfig = BaseConfig;
 exports.DevelopmentConfig = DevelopmentConfig;
 exports.ProductionConfig = ProductionConfig;
 
+// Important. Following config will be used by default
+exports.DefaultConfig = DevelopmentConfig;
+
 

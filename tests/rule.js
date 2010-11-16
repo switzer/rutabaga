@@ -1,15 +1,11 @@
 var sys = require("sys"),
-    config = require('../settings').Config,    
+    config = require('../conf/settings').Config,
+    binding = require("../lib/matcher"),
     fixtures = require("./_fixtures"),
     assert = require("assert");
 
 
-var Matcher = function() {};
-Matcher.prototype.match = function(request, user, rule) {
-    return eval(rule.rule);
-};
-
-var m = new Matcher();
+var m = new binding.PureMatcher();
 
 var request = fixtures.request_fixtures[0];
 var user = fixtures.user_fixtures[0];
